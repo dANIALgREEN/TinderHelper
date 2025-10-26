@@ -6,7 +6,7 @@ class ChatGptService:
     message_list: list = None
 
     def __init__(self, token):
-        self.client = openai.OpenAI(base_url="https://openai.javarush.com/v1", api_key=token)
+        self.client = openai.OpenAI(base_url="", api_key=token)
         self.message_list = []
 
     async def send_message_list(self) -> str:
